@@ -1,2 +1,2 @@
 # csd405
-intermediate java
+# Intermediate Java Programming
