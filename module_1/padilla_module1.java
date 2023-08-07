@@ -1,5 +1,9 @@
 /*
- * Write a program with a class titled Fan. This class is to contain:
+Luis Padilla
+8/7/23
+CSD340 - Assignment 1 
+
+* Write a program with a class titled Fan. This class is to contain:
 
 1.  Four constants named STOPPED, SLOW, MEDIUM, and FAST. The constants are to hold the values of 0, 1, 2, and 3 respectively.
 2.  A private field named speed that holds one of the constant values with the default being STOPPED.
