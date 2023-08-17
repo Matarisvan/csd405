@@ -56,16 +56,18 @@ public class Fan {
     //toString Method
     public String fanDesc() {
         if (speed == STOPPED) {
-            return "fan is off";
-        } else if (speed == SLOW) {
-            return "fan is slow";
-        } else if (speed == MEDIUM) {
-            return "fan is medium";
-        } else if (speed == FAST) {
-            return "fan is fast";
-        } else {
-            return "your fan is broken";
+            return "Fan is off";
         }
+        if (speed == SLOW) {
+            return "Fan is slow";
+        }
+        if (speed == MEDIUM) {
+            return "Fan is medium";
+        }
+        if (speed == FAST) {
+            return "Fan is fast";
+        }
+        return "Your fan is broken";
         
         
          
