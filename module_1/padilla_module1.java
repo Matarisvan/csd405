@@ -28,10 +28,24 @@ public class padilla_module1 {
 
         //test code
         Fan fanDefault = new Fan();
+        System.out.println(fanDefault.getSpeed());
+        System.out.println(fanDefault.getState());
+        System.out.println(fanDefault.getRadius());
+        System.out.println(fanDefault.getColor());
+        System.out.println(fanDefault.fanDesc());
 
-        Fan fanArgument = new Fan(Fan.STOPPED, false, 6, "white");
+        System.out.println("");
+
+        Fan fanArgument = new Fan(Fan.FAST, true, 21, "red");
+        System.out.println(fanArgument.getSpeed());
+        System.out.println(fanArgument.getState());
+        System.out.println(fanArgument.getRadius());
+        System.out.println(fanArgument.getColor());
+        System.out.println(fanArgument.fanDesc());
         
 
+
+        System.out.println("\ngracias\n");
     }
     
 }

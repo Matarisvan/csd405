@@ -10,7 +10,7 @@ public class Fan {
     private int speed;
     private boolean state;
     private int radius;
-    String color;
+    private String color;
 
     //Setter and Getter Methods
     public int getSpeed() {
