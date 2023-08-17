@@ -20,10 +20,12 @@ CSD340 - Assignment 1
 
 
 public class padilla_module1 {
-    public static void main(String [] args) {
+    
+    public static void main(String[] args) {
 
         // Welcome Message
         System.out.println("\nWelcome to Module 1 for CSD405\n");
+
 
     }
     
