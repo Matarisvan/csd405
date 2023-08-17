@@ -26,6 +26,11 @@ public class padilla_module1 {
         // Welcome Message
         System.out.println("\nWelcome to Module 1 for CSD405\n");
 
+        //test code
+        Fan fanDefault = new Fan();
+
+        Fan fanArgument = new Fan(Fan.STOPPED, false, 6, "white");
+        
 
     }
     

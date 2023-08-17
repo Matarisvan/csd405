@@ -53,5 +53,22 @@ public class Fan {
         color = fanColor;
     }
 
+    //toString Method
+    public String fanDesc() {
+        if (speed == STOPPED) {
+            return "fan is off";
+        } else if (speed == SLOW) {
+            return "fan is slow";
+        } else if (speed == MEDIUM) {
+            return "fan is medium";
+        } else if (speed == FAST) {
+            return "fan is fast";
+        } else {
+            return "your fan is broken";
+        }
+        
+        
+         
+    }
 
 }
