@@ -39,14 +39,14 @@ public class Fan {
     }
 
     //Constructors
-    public fan() {
+    public Fan() {
         speed = STOPPED;
         state = false;
         radius = 6;
         color = "white";
     }
 
-    public fan(int fanSpeed, boolean fanState, int fanRadius, String fanColor) {
+    public Fan(int fanSpeed, boolean fanState, int fanRadius, String fanColor) {
         speed = fanSpeed;
         state = fanState;
         radius = fanRadius;
