@@ -36,21 +36,35 @@ public class padilla_module2 {
 
         //test code
         Fan fanDefault = new Fan();
-        System.out.println(fanDefault.getSpeed());
-        System.out.println(fanDefault.getState());
-        System.out.println(fanDefault.getRadius());
-        System.out.println(fanDefault.getColor());
-        System.out.println(fanDefault.fanDesc() + "\n");
+        fanDefault.fanPrint();
         
         Fan fanArgument = new Fan(Fan.FAST, true, 21, "red");
-        System.out.println(fanArgument.getSpeed());
-        System.out.println(fanArgument.getState());
-        System.out.println(fanArgument.getRadius());
-        System.out.println(fanArgument.getColor());
-        System.out.println(fanArgument.fanDesc());
+        fanArgument.fanPrint();
+
+    // ----- Module 2 -----
+        System.out.println("\nModule 2 Additions:\n");
         
+        // Fan Instances
+        Fan fanOff = new Fan(Fan.STOPPED, false, 6, "white");
+        Fan fanOne = new Fan(Fan.SLOW, true, 7, "red");
+        Fan fanTwo = new Fan(Fan.MEDIUM, true, 8, "green");
+        Fan fanThree = new Fan(Fan.FAST, true, 9, "blue");
+
+        // Creating the collection of Instances
+        Fan[] fanCollection = {fanOff, fanOne, fanTwo, fanThree};
+        
+        // Method to call UseFans class
+        UseFans UseFans = new UseFans();
+        System.out.println(UseFans.fanSingle(fanOff));
+
+        // Space for cleanliness
+        System.out.println("");
+
+        // Method for multiple instances
+        UseFans.fanMultiple(fanCollection); 
+
         //closing message
-        System.out.println("\ngracias\n");
+        System.out.println("\nGracias\n");
     }
     
 }

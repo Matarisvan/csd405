@@ -16,26 +16,26 @@ public class Fan {
     public int getSpeed() {
         return speed;
     }
-    public void setSpeed(int setSpeed) {
-        speed = setSpeed;
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
     public boolean getState(){
         return state;
     }
-    public void setState(boolean setState) {
-        state = setState;
+    public void setState(boolean state) {
+        this.state = state;
     }
     public int getRadius() {
         return radius;
     }
-    public void setRadius(int setRadius) {
-        radius = setRadius;
+    public void setRadius(int radius) {
+        this.radius = radius;
     }
     public String getColor() {
         return color;
     }
-    public void setColor(String setColor) {
-        color = setColor;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     //No-Argument Constructor
@@ -47,11 +47,11 @@ public class Fan {
     }
 
     //Argument Constructor
-    public Fan(int fanSpeed, boolean fanState, int fanRadius, String fanColor) {
-        speed = fanSpeed;
-        state = fanState;
-        radius = fanRadius;
-        color = fanColor;
+    public Fan(int speed, boolean state, int radius, String color) {
+        setSpeed(speed);
+        setState(state);
+        setRadius(radius);
+        setColor(color);
     }
 
     //toString Method
@@ -71,4 +71,12 @@ public class Fan {
         return "Your fan is broken";  
     }
 
+    // fan default print method
+    public void fanPrint(){
+        System.out.println(this.getSpeed());
+        System.out.println(this.getState());
+        System.out.println(this.getRadius());
+        System.out.println(this.getColor());
+        System.out.println(this.fanDesc() + "\n");
+    }
 }
