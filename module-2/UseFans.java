@@ -8,7 +8,7 @@ public class UseFans {
     }
 
 
-
+    // method for multiples fans
     public void fanMultiple(Fan[] fanArray) {    
         int index = 0;
         for (Fan fan: fanArray) {

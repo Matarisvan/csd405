@@ -24,7 +24,7 @@ Starting with your code from Module 1 create the following new class titled UseF
 13. Create a method that takes a single instance of a Fan for displaying without using the toString() method.
 14. Use the this reference throughout the Fan class where allowed.
 15. fnaWrite test code that creates a collection of Fans and displays the functionality of all of the Fan instances in the collection.
- */
+*/
 
 
 public class padilla_module2 {
