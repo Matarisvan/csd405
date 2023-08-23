@@ -24,10 +24,12 @@ This class is to contain:
 9) Write test code that ensures all methods function correctly.
  */
 
-public class PadillaInteger {
-    
-    // int data field
-    private int Luis;
+public class Padilla_Module3 {
+    public static void main(String[] args) {
 
-    //
+
+
+
+        System.out.println("\nMuchas Gracias\n");
+    }
 }
