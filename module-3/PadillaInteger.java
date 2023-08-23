@@ -26,8 +26,49 @@ This class is to contain:
 
 public class PadillaInteger {
     
-    // int data field
-    private int Luis;
+    // data field
+    private int luis;
+    private boolean checkOne, checkTwo, checkThree;
 
-    //
+    // constructor
+    public PadillaInteger(int luis) {
+        setLuis(luis);
+    }
+    
+
+    // getter setter
+    public int getLuis() {
+        return luis;
+    }
+    public void setLuis(int Luis) {
+        this.luis = luis;
+    }
+
+    // non-static methods isEven(), isOdd(), isPrime()
+    public boolean isEven(int luis) {
+        if (luis % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }   
+    }
+    public boolean isOdd(int luis) {
+        if (luis % 2 == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+  /*  public boolean isPrime() {
+        
+    }
+
+*/
+    // static methods isEven(Integer), isOdd(Integer), isPrime(Integer)
+    public void printPad() {
+        System.out.println(this.isEven(luis));
+        System.out.println(this.isOdd(luis));
+    }
+
+    
 }

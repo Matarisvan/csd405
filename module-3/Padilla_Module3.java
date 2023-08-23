@@ -27,9 +27,25 @@ This class is to contain:
 public class Padilla_Module3 {
     public static void main(String[] args) {
 
+        System.out.println("\nWelcome to Module 3 Programming Assignment\n");
 
+        // instances
+        PadillaInteger padOne = new PadillaInteger(21);
+        PadillaInteger padTwo = new PadillaInteger(21);
+        PadillaInteger padThree = new PadillaInteger(80);
+        PadillaInteger padFour = new PadillaInteger(17);
 
-
+        // test code
+        padOne.printPad();
+        //padTwo.printPad();
+        padThree.printPad();
+        //padFour.printPad();
+        
+        
+        
+        
         System.out.println("\nMuchas Gracias\n");
     }
+
+    
 }
