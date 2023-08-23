@@ -1,7 +1,7 @@
 /*
 Luis Padilla
 8/7/23
-CSD340 - Assignment 1 
+CSD405 - Assignment 1 
 
 * Write a program with a class titled Fan. This class is to contain:
 
