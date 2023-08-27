@@ -37,11 +37,16 @@ public class Padilla_Module3 {
 
         // test code
         padOne.printPad();
-        //padTwo.printPad();
-        padThree.printPad();
-        //padFour.printPad();
+        System.out.println(padOne.getLuis());
+        System.out.println(padTwo.getLuis());
+        System.out.println(padThree.getLuis());
+//        padTwo.printPad();
+ //       padThree.printPad();
         
         
+        System.out.println(padOne.equals(padTwo));
+        System.out.println(padOne.equals(padThree));
+        System.out.println(padTwo.equals(padThree));
         
         
         System.out.println("\nMuchas Gracias\n");

@@ -28,47 +28,85 @@ public class PadillaInteger {
     
     // data field
     private int luis;
-    private boolean checkOne, checkTwo, checkThree;
 
     // constructor
     public PadillaInteger(int luis) {
         setLuis(luis);
     }
-    
 
     // getter setter
     public int getLuis() {
         return luis;
     }
-    public void setLuis(int Luis) {
+    public void setLuis(int luis) {
         this.luis = luis;
     }
 
     // non-static methods isEven(), isOdd(), isPrime()
-    public boolean isEven(int luis) {
-        if (luis % 2 == 0) {
+    boolean isEven() {
+        if (luis%2 == 0) {
             return true;
         } else {
             return false;
         }   
     }
-    public boolean isOdd(int luis) {
-        if (luis % 2 == 0) {
+    boolean isOdd() {
+        if (luis%2 == 0) {
             return false;
         } else {
             return true;
         }
     }
-  /*  public boolean isPrime() {
-        
+    public boolean isPrime() {
+        if (luis <= 1) {
+            return false;
+        }
+        for (int i=2; i<luis; i++) {
+            if (luis % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
-
-*/
-    // static methods isEven(Integer), isOdd(Integer), isPrime(Integer)
-    public void printPad() {
-        System.out.println(this.isEven(luis));
-        System.out.println(this.isOdd(luis));
-    }
-
     
+    // static methods isEven(int), isOdd(int), isPrime(int)
+    public static boolean isEven(int luis) {   
+        if (luis%2 == 0) {
+            return true;
+        } else {
+            return false;
+        }   
+    }
+    public static boolean isOdd(int luis) {
+        if (luis%2 == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    public boolean isPrime(int luis) {
+        if (luis <= 1) {
+            return false;
+        }
+        for (int i=2; i<luis; i++) {
+            if (luis % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void printPad() {
+        System.out.println(isEven(luis));
+        System.out.println(isOdd(luis));
+        System.out.println(isPrime(luis));
+        System.out.println("");
+    }
+
+    public boolean equals(int num) {
+        return this.luis == num;
+    }
+    public boolean equals(PadillaInteger luis) {
+        return this.luis == luis.luis;
+    }
 }
