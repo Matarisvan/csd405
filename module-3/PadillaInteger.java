@@ -96,17 +96,21 @@ public class PadillaInteger {
         return true;
     }
 
-    public void printPad() {
-        System.out.println(isEven(luis));
-        System.out.println(isOdd(luis));
-        System.out.println(isPrime(luis));
-        System.out.println("");
-    }
-
+    // equals method
     public boolean equals(int num) {
         return this.luis == num;
     }
     public boolean equals(PadillaInteger luis) {
         return this.luis == luis.luis;
     }
+
+    // print methods
+    public void printAttributes() {
+        System.out.println(luis + " Attributes:");
+        System.out.println("Even: " + isEven(luis));
+        System.out.println("Odd: " +isOdd(luis));
+        System.out.println("Prime: " + isPrime(luis));
+        System.out.println("");
+    }
+
 }

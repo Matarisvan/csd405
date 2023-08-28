@@ -36,18 +36,19 @@ public class Padilla_Module3 {
         PadillaInteger padFour = new PadillaInteger(17);
 
         // test code
-        padOne.printPad();
-        System.out.println(padOne.getLuis());
-        System.out.println(padTwo.getLuis());
-        System.out.println(padThree.getLuis());
-//        padTwo.printPad();
- //       padThree.printPad();
+        padOne.printAttributes();
+        padTwo.printAttributes();
+        padThree.printAttributes();
+        padFour.printAttributes();        
         
         
-        System.out.println(padOne.equals(padTwo));
-        System.out.println(padOne.equals(padThree));
-        System.out.println(padTwo.equals(padThree));
-        
+        // equals method
+        System.out.println("padOne = 21: " + padOne.equals(21));
+        System.out.println("padTwo = 21: " + padTwo.equals(21));
+        System.out.println("padThree = 80: " + padThree.equals(80));
+        System.out.println("padOne = padTwo: " + padOne.equals(padTwo));
+        System.out.println("padTwo = padThree: " + padTwo.equals(padThree));
+        System.out.println("padThree = padFour: " + padThree.equals(padFour));
         
         System.out.println("\nMuchas Gracias\n");
     }
